@@ -46,7 +46,7 @@ public class Deck
 		List<Card> drawnCards = new LinkedList<Card>();
 		
 		for (int i = 0; i < howMany; i++)
-			drawnCards.add(deckCards.removeLast());
+			drawnCards.add(deckCards.removeFirst());
 		
 		return drawnCards;
 	}
