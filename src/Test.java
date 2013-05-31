@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 public class Test
 {
 	@org.junit.Test
-	public void test()
+	public void deckTest()
 	{
 		Deck deck = new Deck();
 		
@@ -23,5 +23,14 @@ public class Test
 		deck2.shuffle();
 		
 		assertTrue("if a a deck is shuffled, it must have a different order of cards than an unshuffled deck", !deck.draw(5).equals(deck2.draw(5)));
+	}
+	
+	@org.junit.Test
+	public void cardTest()
+	{
+		Card highestCard = new Card(Card.Suit.SPADES, Card.FaceValue.ACE);
+		Card lowestCard = new Card(Card.Suit.CLUBS, Card.FaceValue.TWO);
+		
+		
 	}
 }
