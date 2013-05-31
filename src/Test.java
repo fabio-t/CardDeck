@@ -29,8 +29,21 @@ public class Test
 	public void cardTest()
 	{
 		Card highestCard = new Card(Card.Suit.SPADES, Card.FaceValue.ACE);
+		Card highCard = new Card(Card.Suit.SPADES, Card.FaceValue.JACK);
 		Card lowestCard = new Card(Card.Suit.CLUBS, Card.FaceValue.TWO);
+		Card lowCard = new Card(Card.Suit.CLUBS, Card.FaceValue.FOUR);
 		
+		assertTrue("the highest card must return a positive number when calling 'compareTo' with the others", 
+					highestCard.compareTo(highCard) > 0 && highestCard.compareTo(lowCard) > 0 &&
+					highestCard.compareTo(lowestCard) > 0);
 		
+		assertTrue("the lowest card must return a negative number when calling 'compareTo' with the others",
+					lowestCard.compareTo(highCard) < 0 && lowestCard.compareTo(lowCard) < 0 &&
+					lowestCard.compareTo(highestCard) < 0);
+		
+		Card highCard2 = new Card(Card.Suit.HEARTS, Card.FaceValue.ACE);
+		Card lowCard2 = new Card(Card.Suit.DIAMONDS, Card.FaceValue.TWO);
+		
+		assertTrue("if the suit is different, it rules the order even with the same face value", highCard.compareTo(highCard2) > 0 && lowCard.compareTo(lowCard2) < 0);
 	}
 }
