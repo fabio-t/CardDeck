@@ -1,6 +1,6 @@
 /**
  * Class implementing a Card, with a suit and a face value. It implements {@link Comparable},
- * and its natural order is by suit first, than by value.
+ * and its natural order is by suit first, then by value.
  * 
  * @author		Fabio Ticconi
  */
