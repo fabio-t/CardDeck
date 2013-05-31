@@ -1,14 +1,10 @@
 This is an Eclipse Project, with a .classpath and a .project included.
 
---------------
-
 The src/ directory contains three source files:
 
-Deck.java
-Card.java
-UnitTests.java
-
---------------
+- Deck.java
+- Card.java
+- UnitTests.java
 
 **Deck.java** defines the Deck class, implementing the three public methods required. 
 
