@@ -2,6 +2,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+
 /**
  * Class implementing a simple deck of cards. A deck is made of
  * {@link Card} objects, each having a unique combination of Suit and FaceValue.
