@@ -37,7 +37,7 @@ public class Deck
 	/** Draw a number of cards from the deck. The end result is that the cards returned are removed from the deck.
 	 * 
 	 * @param howMany the number of cards to be returned
-	 * @return a {@link List} containing the cards, in the same order they were drawn
+	 * @return a {@link List} containing cards in the same order they were drawn
 	 */
 	public List<Card> draw(int howMany)
 	{
@@ -56,7 +56,7 @@ public class Deck
 	 * Draw a number of cards from the deck in sorted order. The end result is that the cards returned are removed from the deck.
 	 * 
 	 * @param howMany the number of cards to be returned
-	 * @return a {@link List} containing the cards, in the same order they were drawn
+	 * @return a {@link List} containing cards ordered by suit and face value
 	 */
 	public List<Card> drawSorted(int howMany)
 	{		

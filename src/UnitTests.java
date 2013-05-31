@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 
 
-public class Test
+public class UnitTests
 {
 	@org.junit.Test
 	public void deckTest()
